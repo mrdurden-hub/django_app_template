@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% include 'home/partials/_head.html'%}
+</head>
+<body>
+    <div class="blog-wrapper">
+        {% include 'home/partials/_header.html' %}
+        {% block content %} {% endblock content %}
+        {% include 'home/partials/_pagination.html' %}
+        {% include 'home/partials/_footer.html' %}
+    </div>
+</body>
+</html>
